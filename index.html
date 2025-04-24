@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head id="head-content">
-    
+
+  
 </head>
+
 <body>
 
     <!-- Header will be inserted here -->
@@ -214,6 +216,103 @@
     </div>
     <!-- Product End -->
 
+<!-- aleem -->
+<div class="container-xxl py-5">
+    <div class="container">
+      <div class="section-title text-center mb-5">
+        <h1 class="display-5">Our Products</h1>
+      </div>
+
+      <div id="product-tabs">
+        <!-- Tabs -->
+        <div class="p_tablist">
+          <span class="tab-item active">Food Ingredients</span>
+          <span class="tab-item">Pet Food Ingredients</span>
+          <span class="tab-item">Flavour Seasoning Products</span>
+          <span class="tab-item">Seasoning For HoReCa</span>
+          <span class="tab-item">Packaged Food</span>
+          <span class="tab-item">Imported Products</span>
+        </div>
+
+        <div class="top-content">
+          <!-- Tab 0: Food Ingredients -->
+          <div class="p_content content-box active" id="content_box-0">
+            <div class="row g-4">
+              <!-- Example product tile -->
+              <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="card h-100 wow animate__fadeInUp" data-wow-delay="0.1s">
+                  <!-- 4:3 aspect ratio -->
+                  <div class="ratio ratio-4x3">
+                    <img src="img/beefoil.jpg" class="card-img-top" alt="Beef Bone Extract Oil">
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="h6 text-primary text-decoration-none">
+                      Beef Bone Extract Oil
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- repeat per product -->
+              <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="card h-100 wow animate__fadeInUp" data-wow-delay="0.2s">
+                  <div class="ratio ratio-4x3">
+                    <img src="img/skimed.jpg" class="card-img-top" alt="Skimmed Beef Bone Extract Oil">
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="h6 text-primary text-decoration-none">
+                      Skimmed Beef Bone Extract Oil
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="card h-100 wow animate__fadeInUp" data-wow-delay="0.3s">
+                  <div class="ratio ratio-4x3">
+                    <img src="img/highfat.jpg" class="card-img-top" alt="Beef Bone Extract (High Fat)">
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="h6 text-primary text-decoration-none">
+                      Beef Bone Extract (High Fat)
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 1: Pet Food Ingredients -->
+          <div class="p_content content-box" id="content_box-1">
+            <div class="row g-4">
+              <div class="col-lg-4 col-md-6 portfolio-item">
+                <div class="card h-100 wow animate__fadeInUp" data-wow-delay="0.1s">
+                  <div class="ratio ratio-4x3">
+                    <img src="img/pet.jpg" class="card-img-top" alt="Palatant for cats">
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="h6 text-primary text-decoration-none">
+                      Palatant for cats
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <!-- …and so on for each pet‑food item… -->
+            </div>
+          </div>
+
+          <!-- Tabs 2–5: placeholders -->
+          <div class="p_content content-box" id="content_box-2"><div class="row g-4"></div></div>
+          <div class="p_content content-box" id="content_box-3"><div class="row g-4"></div></div>
+          <div class="p_content content-box" id="content_box-4"><div class="row g-4"></div></div>
+          <div class="p_content content-box" id="content_box-5"><div class="row g-4"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ <!-- end aleem -->
+
     <!-- Quote Start -->
     <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
         <div class="container quote px-lg-0">
@@ -236,5 +335,26 @@
     <!-- Footer will be inserted here -->
     <div id="footer-container"></div>
     <script src="include.js"></script>
+    
+  <!-- JS: jQuery, Bootstrap, WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    // Initialize WOW animations
+    new WOW().init();
+
+    // Tab switching
+    document.querySelectorAll('#product-tabs .tab-item').forEach((tab, idx) => {
+      tab.addEventListener('click', () => {
+        // reset
+        document.querySelectorAll('#product-tabs .tab-item').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('#product-tabs .p_content').forEach(p => p.classList.remove('active'));
+        // activate
+        tab.classList.add('active');
+        document.getElementById(`content_box-${idx}`).classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
