@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head id="head-content">
-  <!-- keep your meta tags, CSS links, etc. here -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Food Ingredients – Free Quote</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css for WOW.js -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-  <!-- Header will be inserted here -->
+  <!-- Header injected here -->
   <div id="header-container"></div>
-
 
   <!-- Page Header Start -->
   <div class="container-fluid page-header py-5 mb-5">
@@ -24,60 +31,114 @@
     </div>
   </div>
   <!-- Page Header End -->
+
   <!-- Section Title Start -->
   <div class="container my-4">
     <h2 class="text-center display-6">Food Ingredients</h2>
   </div>
   <!-- Section Title End -->
-  
-  <!-- Quote Start -->
-  <div class="container-fluid bg-light overflow-hidden px-lg-0" style="margin: 6rem 0;">
-    <div class="container quote px-lg-0">
-      <div class="row g-0 mx-lg-0">
 
-        <!-- Left Image -->
-        <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
-          <div class="position-relative h-100">
-            <img class="position-absolute img-fluid w-100 h-100"
-                 src="img/FoodIngredients/1.jpg"
-                 style="object-fit: cover;"
-                 alt="Savoury Basis">
-          </div>
+  <!-- Nav-Pills Product Selector -->
+  <ul class="nav nav-pills justify-content-center mb-5" id="product-tabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="tab-meat" data-bs-toggle="pill" data-bs-target="#meat" type="button" role="tab" aria-controls="meat" aria-selected="true">
+        Meat Powder
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-vegfruit" data-bs-toggle="pill" data-bs-target="#vegfruit" type="button" role="tab" aria-controls="vegfruit" aria-selected="false">
+        Veg &amp; Fruit
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-functional" data-bs-toggle="pill" data-bs-target="#functional" type="button" role="tab" aria-controls="functional" aria-selected="false">
+        Functional
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-seafood" data-bs-toggle="pill" data-bs-target="#seafood" type="button" role="tab" aria-controls="seafood" aria-selected="false">
+        Seafood
+      </button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content container px-lg-5">
+
+    <!-- Meat Powder / Meat Extract -->
+    <div class="tab-pane fade show active" id="meat" role="tabpanel" aria-labelledby="tab-meat">
+      <div class="row align-items-center g-0">
+        <div class="col-lg-6 pe-lg-4 mb-4 mb-lg-0">
+          <img src="img/FoodIngredients/2.jpg" class="img-fluid rounded" alt="Meat Powder / Meat Extract">
         </div>
-        <!-- Right Text & WhatsApp Button -->
-        <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
-          <div class="p-lg-5 pe-lg-0">
-            <div class="section_title text-start">
-              <h1 class="display-5 mb-4">Savoury Basis</h1>
-            </div>
-
-            <p class="mb-3">
-              Savoury Basis is a premium, clean-label flavor base made from just gluten-free fermented soy sauce, maltodextrin, and salt.  
-            </p>
-            <p class="mb-3">
-              Our meticulous spray-drying process locks in the rich umami of traditional soy sauce, yielding a light-brown, free-flowing powder with consistent taste, aroma, and color.  
-            </p>
-            <p class="mb-4">
-              Perfect for dry seasoning blends, snack coatings, sauces, meat marinades, soups, and ready meals. Its minimal ingredient list and allergen-friendly profile make it ideal for clean-label and gluten-sensitive formulations.
-            </p>
-
-            <div class="mt-4">
-              <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Savoury%20Basis"
-                 target="_blank"
-                 class="btn btn-success btn-lg w-100 py-3"
-                 style="font-size: 1.25rem;">
-                Contact Us on WhatsApp
-              </a>
-            </div>
-          </div>
+        <div class="col-lg-6">
+          <h2>Meat Powder / Meat Extract</h2>
+          <p>Our premium Meat Powder and Extracts deliver concentrated savory depth, made through patented low-temperature processing that preserves proteins, minerals, and natural flavors.</p>
+          <p>Ideal for bouillons, sauces, snack seasonings, pet foods, and convenience meals—available in chicken, beef, and pork varieties for clean-label positioning.</p>
+          <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Meat%20Powder%20%2F%20Meat%20Extract"
+             class="btn btn-success btn-lg">
+            Contact Us on WhatsApp
+          </a>
         </div>
-
       </div>
-      
-
     </div>
+
+    <!-- Vegetable & Fruit Extract / Powder -->
+    <div class="tab-pane fade" id="vegfruit" role="tabpanel" aria-labelledby="tab-vegfruit">
+      <div class="row align-items-center g-0">
+        <div class="col-lg-6 order-lg-2 ps-lg-4 mb-4 mb-lg-0">
+          <img src="img/FoodIngredients/3.jpg" class="img-fluid rounded" alt="Vegetable & Fruit Extract / Powder">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h2>Vegetable &amp; Fruit Extract / Powder</h2>
+          <p>Vibrant, nutrient-rich powders and extracts sourced from the finest fruits and vegetables—cold-processed to lock in color, flavor, and phytonutrients.</p>
+          <p>Perfect for beverages, health bars, dairy alternatives, and functional snacks. No artificial carriers or preservatives.</p>
+          <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Vegetable%20%26%20Fruit%20Extract%20%2F%20Powder"
+             class="btn btn-success btn-lg">
+            Contact Us on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Functional Ingredients -->
+    <div class="tab-pane fade" id="functional" role="tabpanel" aria-labelledby="tab-functional">
+      <div class="row align-items-center g-0">
+        <div class="col-lg-6 pe-lg-4 mb-4 mb-lg-0">
+          <img src="img/FoodIngredients/4.jpg" class="img-fluid rounded" alt="Functional Ingredients">
+        </div>
+        <div class="col-lg-6">
+          <h2>Functional Ingredients</h2>
+          <p>A curated portfolio of actives—prebiotics, protein concentrates, specialty fibers, and emulsifiers—designed to enhance texture, nutrition, and shelf-life.</p>
+          <p>Scientifically backed, label-friendly, and perfect for baked goods, dairy, nutrition bars, and beverages.</p>
+          <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Functional%20Ingredients"
+             class="btn btn-success btn-lg">
+            Contact Us on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Seafood Extract -->
+    <div class="tab-pane fade" id="seafood" role="tabpanel" aria-labelledby="tab-seafood">
+      <div class="row align-items-center g-0">
+        <div class="col-lg-6 order-lg-2 ps-lg-4 mb-4 mb-lg-0">
+          <img src="img/FoodIngredients/5.jpg" class="img-fluid rounded" alt="Seafood Extract">
+        </div>
+        <div class="col-lg-6 order-lg-1">
+          <h2>Seafood Extract</h2>
+          <p>Premium fish and shellfish extracts—cold-extracted and spray-dried—for authentic ocean flavor in seasonings, sauces, and pet foods.</p>
+          <p>Rich in natural amino acids, minerals, and marine peptides—no off-notes or chalkiness.</p>
+          <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Seafood%20Extract"
+             class="btn btn-success btn-lg">
+            Contact Us on WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <!-- Quote End -->
+  <!-- Tab Content End -->
 
   <!-- Map Start -->
   <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
@@ -99,16 +160,15 @@
   </div>
   <!-- Map End -->
 
-  <!-- Footer will be inserted here -->
+  <!-- Footer injected here -->
   <div id="footer-container"></div>
+
+  <!-- Scripts -->
   <script src="include.js"></script>
-  
-  <!-- JS: jQuery, Bootstrap, WOW.js -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>    
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
   <script>
-    // Initialize WOW animations
     new WOW().init();
   </script>
 </body>
