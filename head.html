@@ -138,4 +138,24 @@
     display: none;
 }
 
+@media (max-width: 768px) {
+          .p_tablist {
+            display: flex;                    /* lay items out in a row */
+            overflow-x: auto;                 /* allow sideways scrolling */
+            -webkit-overflow-scrolling: touch;/* smooth momentum scroll on iOS */
+            padding-bottom: 0.5rem;           /* give a little breathing room */
+          }
+          .p_tablist .tab-item {
+            flex: 0 0 auto;                   /* don’t grow or shrink — keep content width */
+            white-space: nowrap;              /* prevent label wrap */
+            padding: 0.5rem 1rem;             /* tappable hit area */
+            margin-right: 0.5rem;             /* space between tabs */
+            cursor: pointer;                  /* show it's interactive */
+          }
+          /* optional: hide scrollbar for WebKit browsers */
+          .p_tablist::-webkit-scrollbar {
+            display: none;
+          }
+        }
+
 </style>
