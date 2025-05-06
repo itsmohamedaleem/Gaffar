@@ -76,93 +76,21 @@
                 • Create a thank-you.html page for the _next redirect.
               -->
               <form
-                id="contactForm"
-                action="https://formsubmit.co/mdaleem2013@gmail.com"
-                method="POST"
-              >
-                <!-- Disable FormSubmit’s reCAPTCHA? true/false -->
-                <input type="hidden" name="_captcha" value="false" />
-                <!-- After success, redirect here -->
-                <input type="hidden" name="_next" value="thankyou.html" />
-                <!-- Custom e-mail subject line -->
-                <input
-                  type="hidden"
-                  name="_subject"
-                  value="New inquiry from infiniteproteinsandfoods.com"
-                />
-
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                      />
-                      <label for="name"
-                        ><i class="fa fa-user me-2"></i>Your Name</label
-                      >
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="form-floating">
-                      <input
-                        type="email"
-                        class="form-control"
-                        id="email"
-                        name="email"
-                        placeholder="Your Email"
-                        required
-                      />
-                      <label for="email"
-                        ><i class="fa fa-envelope me-2"></i>Your Email</label
-                      >
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="subject"
-                        name="subject"
-                        placeholder="Subject"
-                        required
-                      />
-                      <label for="subject"
-                        ><i class="fa fa-tag me-2"></i>Subject</label
-                      >
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <div class="form-floating">
-                      <textarea
-                        class="form-control"
-                        id="message"
-                        name="message"
-                        placeholder="Leave your message here"
-                        style="height: 150px"
-                        required
-                      ></textarea>
-                      <label for="message"
-                        ><i class="fa fa-comments me-2"></i>Message</label
-                      >
-                    </div>
-                  </div>
-
-                  <div class="col-12">
-                    <button type="submit" class="btn btn-primary w-100 py-3">
-                      Send Message
-                    </button>
-                  </div>
-                </div>
-              </form>
+              action="https://formsubmit.co/mdaleem2013@gmail.com"
+              method="POST"
+            >
+              <input type="hidden" name="_captcha" value="false">
+              <input type="hidden" name="_next"   value="thankyou.html">
+              <input type="hidden" name="_subject" value="New inquiry from infiniteproteinsandfoods.com">
+            
+              <input name="name"    placeholder="Your Name"    required>
+              <input name="email"   placeholder="Your Email"   required>
+              <input name="subject" placeholder="Subject"      required>
+              <textarea name="message" placeholder="Message"   required></textarea>
+            
+              <button type="submit">Send Message</button>
+            </form>
+            
               <!-- Form end -->
 
             </div>
