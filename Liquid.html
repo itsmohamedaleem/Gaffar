@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head-content">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liquid Products</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate.css for WOW.js -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div id="header-container"></div>
+
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header py-5 mb-5">
+    <div class="container py-5">
+      <h1 class="display-3 text-white mb-3 animated slideInDown">Liquid Products</h1>
+      <nav aria-label="breadcrumb animated slideInDown">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+          <li class="breadcrumb-item text-white active" aria-current="page">Liquid Products</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+  <div class="container my-4">
+    <h2 class="text-center display-6">Liquid Products</h2>
+  </div>
+
+  <!-- Nav-Pills Product Selector -->
+  <ul class="nav nav-pills justify-content-center mb-5" id="product-tabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active" id="tab-pallatant" data-bs-toggle="pill" data-bs-target="#pallatant" type="button" role="tab" aria-controls="pallatant" aria-selected="true">
+        Chicken-Based Palatant
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-broth" data-bs-toggle="pill" data-bs-target="#broth" type="button" role="tab" aria-controls="broth" aria-selected="false">
+        Chicken Bone Broth
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-collagen-liquid" data-bs-toggle="pill" data-bs-target="#collagen-liquid" type="button" role="tab" aria-controls="collagen-liquid" aria-selected="false">
+        Chicken Collagen Liquid
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-palatant-oil" data-bs-toggle="pill" data-bs-target="#palatant-oil" type="button" role="tab" aria-controls="palatant-oil" aria-selected="false">
+        Palatant Chicken Oil
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-savory-oil" data-bs-toggle="pill" data-bs-target="#savory-oil" type="button" role="tab" aria-controls="savory-oil" aria-selected="false">
+        Chicken Savory Oil
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link" id="tab-oil" data-bs-toggle="pill" data-bs-target="#oil" type="button" role="tab" aria-controls="oil" aria-selected="false">
+        Chicken Oil
+      </button>
+    </li>
+  </ul>
+
+  <!-- Tab Content -->
+  <div class="tab-content container px-lg-5">
+
+    <!-- Chicken-Based Palatant -->
+    <!-- <div class="tab-pane fade show active" id="pallatant" role="tabpanel" aria-labelledby="tab-pallatant">
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/1.jpg" class="img-fluid rounded" alt="Palatant view 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/2.jpg" class="img-fluid rounded" alt="Palatant view 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/3.jpg" class="img-fluid rounded" alt="Palatant view 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/4.jpg" class="img-fluid rounded" alt="Palatant view 4">
+        </div>
+      </div>
+      <h2>Chicken-Based Palatant</h2>
+      <p>Highly palatable liquid blend designed to enhance feed intake and flavor for both dogs and cats. Our chicken-based palatant delivers savory aroma and taste, formulated for easy mixing into kibble or wet food.</p>
+      <p>Available in concentrated and ready-to-use formats—perfect for pet food manufacturers seeking to boost palatability and consumer acceptance.</p>
+      <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Chicken-Based%20Palatant" class="btn btn-success btn-lg">
+        Contact Us on WhatsApp
+      </a>
+    </div> -->
+    <!-- Chicken-Based Palatant -->
+<div class="tab-pane fade show active" id="pallatant" role="tabpanel" aria-labelledby="tab-pallatant">
+
+  <!-- Sub-tabs for Dog & Cat -->
+  <ul class="nav nav-tabs mb-4" id="sub-pallatant-tabs" role="tablist">
+    <li class="nav-item" role="presentation">
+      <button class="nav-link active"
+              id="sub-tab-dog"
+              data-bs-toggle="tab"
+              data-bs-target="#pall-dog"
+              type="button"
+              role="tab"
+              aria-controls="pall-dog"
+              aria-selected="true">
+        Dog
+      </button>
+    </li>
+    <li class="nav-item" role="presentation">
+      <button class="nav-link"
+              id="sub-tab-cat"
+              data-bs-toggle="tab"
+              data-bs-target="#pall-cat"
+              type="button"
+              role="tab"
+              aria-controls="pall-cat"
+              aria-selected="false">
+        Cat
+      </button>
+    </li>
+  </ul>
+
+  <div class="tab-content">
+    <!-- Dog sub-pane -->
+    <div class="tab-pane fade show active" id="pall-dog" role="tabpanel" aria-labelledby="sub-tab-dog">
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/Dog/1.jpg"
+               class="img-fluid rounded"
+               alt="Dog Palatant view 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/Dog/2.jpg"
+               class="img-fluid rounded"
+               alt="Dog Palatant view 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/Dog/3.jpg"
+               class="img-fluid rounded"
+               alt="Dog Palatant view 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/Dog/4.jpg"
+               class="img-fluid rounded"
+               alt="Dog Palatant view 4">
+        </div>
+      </div>
+      <h3>Chicken-Based Palatant for Dogs</h3>
+      <p>Formulated to maximize kibble acceptance in dogs, this savory liquid palatant delivers a robust chicken aroma and taste that dogs love. Ideal for coatings or mixers in dry and wet dog foods.</p>
+      <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Chicken-Based%20Palatant%20for%20Dogs"
+         class="btn btn-success btn-lg">
+        Contact Us on WhatsApp
+      </a>
+    </div>
+
+    <!-- Cat sub-pane -->
+    <div class="tab-pane fade" id="pall-cat" role="tabpanel" aria-labelledby="sub-tab-cat">
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/Cat/1.jpg"
+               class="img-fluid rounded"
+               alt="Cat Palatant view 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/Cat/2.jpg"
+               class="img-fluid rounded"
+               alt="Cat Palatant view 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/Cat/3.jpg"
+               class="img-fluid rounded"
+               alt="Cat Palatant view 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBasedPalatant/Cat/4.jpg"
+               class="img-fluid rounded"
+               alt="Cat Palatant view 4">
+        </div>
+      </div>
+      <h3>Chicken-Based Palatant for Cats</h3>
+      <p>Tailored to feline taste receptors, this palatant delivers an irresistible chicken flavor and texture that cats can’t resist. Perfect for boosting acceptance in wet pouches or crunchy kibbles.</p>
+      <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Chicken-Based%20Palatant%20for%20Cats"
+         class="btn btn-success btn-lg">
+        Contact Us on WhatsApp
+      </a>
+    </div>
+  </div>
+
+</div>
+
+    <!-- Chicken Bone Broth -->
+    <div class="tab-pane fade" id="broth" role="tabpanel" aria-labelledby="tab-broth">
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBoneBroth/1.jpg" class="img-fluid rounded" alt="Bone Broth view 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBoneBroth/2.jpg" class="img-fluid rounded" alt="Bone Broth view 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBoneBroth/3.jpg" class="img-fluid rounded" alt="Bone Broth view 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenBoneBroth/4.jpg" class="img-fluid rounded" alt="Bone Broth view 4">
+        </div>
+      </div>
+      <h2>Chicken Bone Broth</h2>
+      <p>Rich, collagen-packed bone broth slow-cooked and filtered to preserve natural nutrients and savory flavor. Ideal for pet supplements, functional beverages, and culinary applications.</p>
+      <p>Free from additives and MSG—offering a clean, nutrient-dense liquid base for health-focused formulations.</p>
+      <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Chicken%20Bone%20Broth" class="btn btn-success btn-lg">
+        Contact Us on WhatsApp
+      </a>
+    </div>
+
+    <!-- Chicken Collagen Liquid -->
+    <div class="tab-pane fade" id="collagen-liquid" role="tabpanel" aria-labelledby="tab-collagen-liquid">
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenCollagenLiquid/1.jpg" class="img-fluid rounded" alt="Collagen Liquid view 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenCollagenLiquid/2.jpg" class="img-fluid rounded" alt="Collagen Liquid view 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenCollagenLiquid/3.jpg" class="img-fluid rounded" alt="Collagen Liquid view 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenCollagenLiquid/4.jpg" class="img-fluid rounded" alt="Collagen Liquid view 4">
+        </div>
+      </div>
+      <h2>Chicken Collagen Liquid</h2>
+      <p>Hydrolyzed chicken collagen in liquid form—room-temperature stable and ready to blend into beverages, supplements, and cosmetic formulations.</p>
+      <p>Provides targeted support for skin, coat, and joint health with enhanced bioavailability and neutral taste profile.</p>
+      <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Chicken%20Collagen%20Liquid" class="btn btn-success btn-lg">
+        Contact Us on WhatsApp
+      </a>
+    </div>
+
+    <!-- Palatant Chicken Oil -->
+    <div class="tab-pane fade" id="palatant-oil" role="tabpanel" aria-labelledby="tab-palatant-oil">
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/PalatantChickenOil/1.jpg" class="img-fluid rounded" alt="Palatant Oil view 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/PalatantChickenOil/2.jpg" class="img-fluid rounded" alt="Palatant Oil view 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/PalatantChickenOil/3.jpg" class="img-fluid rounded" alt="Palatant Oil view 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/PalatantChickenOil/4.jpg" class="img-fluid rounded" alt="Palatant Oil view 4">
+        </div>
+      </div>
+      <h2>Palatant Chicken Oil</h2>
+      <p>Flavor-intense chicken oil designed to improve mouthfeel and palatability in dry and wet pet foods. Rich in natural fats and aroma compounds.</p>
+      <p>Emulsifiable and stable—ideal for topical coating or inclusion in kibble and canned recipes.</p>
+      <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Palatant%20Chicken%20Oil" class="btn btn-success btn-lg">
+        Contact Us on WhatsApp
+      </a>
+    </div>
+
+    <!-- Chicken Savory Oil -->
+    <div class="tab-pane fade" id="savory-oil" role="tabpanel" aria-labelledby="tab-savory-oil">
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenSavoryOil/1.jpg" class="img-fluid rounded" alt="Savory Oil view 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenSavoryOil/2.jpg" class="img-fluid rounded" alt="Savory Oil view 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenSavoryOil/3.jpg" class="img-fluid rounded" alt="Savory Oil view 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenSavoryOil/4.jpg" class="img-fluid rounded" alt="Savory Oil view 4">
+        </div>
+      </div>
+      <h2>Chicken Savory Oil</h2>
+      <p>Light, aromatic chicken oil crafted for gourmet food applications. Enhances depth of flavor in sauces, dressings, and marinades.</p>
+      <p>No artificial flavors—just pure, cold-pressed chicken lipids for a true savory note.</p>
+      <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Chicken%20Savory%20Oil" class="btn btn-success btn-lg">
+        Contact Us on WhatsApp
+      </a>
+    </div>
+
+    <!-- Chicken Oil -->
+    <div class="tab-pane fade" id="oil" role="tabpanel" aria-labelledby="tab-oil">
+      <div class="row g-4 mb-4">
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenOil/1.jpg" class="img-fluid rounded" alt="Chicken Oil view 1">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenOil/2.jpg" class="img-fluid rounded" alt="Chicken Oil view 2">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenOil/3.jpg" class="img-fluid rounded" alt="Chicken Oil view 3">
+        </div>
+        <div class="col-6 col-md-3">
+          <img src="img/LiquidProducts/ChickenOil/4.jpg" class="img-fluid rounded" alt="Chicken Oil view 4">
+        </div>
+      </div>
+      <h2>Chicken Oil</h2>
+      <p>Pure, refined chicken oil—rich in essential fatty acids and vitamins. Versatile for culinary uses, pet nutrition, and supplement formulations.</p>
+      <p>Cold-filtered for clarity and stability; delivers consistent quality and clean flavor.</p>
+      <a href="https://api.whatsapp.com/send?phone=YOUR_NUMBER&text=I'm%20interested%20in%20Chicken%20Oil" class="btn btn-success btn-lg">
+        Contact Us on WhatsApp
+      </a>
+    </div>
+
+  </div>
+  <!-- Tab Content End -->
+
+  <!-- Map Start -->
+  <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container quote px-lg-0">
+      <div class="row g-0 mx-lg-0">
+        <div class="col-lg-12 pe-lg-0" style="min-height: 400px;">
+          <div class="position-relative h-100">
+            <iframe class="position-absolute w-100 h-100"
+                    style="object-fit: cover;"
+                    src="https://shorturl.at/RheT8"
+                    frameborder="0"
+                    allowfullscreen
+                    aria-hidden="false"
+                    tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Map End -->
+
+  <div id="footer-container"></div>
+
+  <!-- Scripts -->
+  <script src="include.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script> new WOW().init(); </script>
+</body>
+</html>

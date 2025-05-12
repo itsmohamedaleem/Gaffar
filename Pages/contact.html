@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head id="head-content">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us – Packaged Foods Service</title>
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+  <!-- Animate.css for WOW.js -->
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    rel="stylesheet"
+  />
+  <!-- Your custom styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Header (injected by include.js) -->
+  <div id="header-container"></div>
+
+  <!-- Page Header Start -->
+  <div class="container-fluid page-header py-5 mb-5">
+    <div class="container py-5">
+      <h1 class="display-3 text-white mb-3 animate__animated animate__slideInDown">
+        Contact Us
+      </h1>
+      <nav aria-label="breadcrumb" class="animate__animated animate__slideInDown">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a class="text-white" href="/index.html">Home/</a>
+          </li>
+          <li class="breadcrumb-item">
+            <a class="text-white" href="/contact.html">Contact</a>
+          </li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- Page Header End -->
+
+  <!-- Contact Section Start -->
+  <section class="contact-section py-5">
+    <div class="container-fluid px-lg-0">
+      <div class="row g-0 g-lg-5 align-items-stretch">
+
+        <!-- Map (Left) -->
+        <div class="col-lg-6 pe-lg-0" style="min-height: 400px;">
+          <iframe
+            class="position-relative w-100 h-100"
+            style="object-fit: cover; border:0;"
+            src="https://shorturl.at/RheT8"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <!-- Form (Right) -->
+        <div class="col-lg-6 bg-white">
+          <div class="h-100 d-flex align-items-center justify-content-center p-5">
+            <div class="w-100" style="max-width: 836px;">
+
+              <h2 class="mb-4">Get in Touch</h2>
+              <p class="text-muted mb-4">
+                Have questions or need a custom quote? Fill out the form below and we’ll get back to you within 24 hours.
+              </p>
+
+              <!--
+                FormSubmit.co integration:
+                • Replace xyz@gmail.com with your real email.
+                • Create a thank-you.html page for the _next redirect.
+              -->
+              <form action="https://formsubmit.co/mdaleem2013@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="thankyou.html">
+                <input name="name" placeholder="Name"><br>
+                <input name="email" placeholder="Email"><br>
+                <button type="submit">ok</button>
+              </form>
+            
+              <!-- Form end -->
+
+            </div>
+          </div>
+        </div>
+        <!-- Form End -->
+
+      </div>
+    </div>
+  </section>
+  <!-- Contact Section End -->
+
+  <!-- Footer (injected by include.js) -->
+  <div id="footer-container"></div>
+
+  <!-- Scripts -->
+  <!-- <script src="include.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  ></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+</html>
