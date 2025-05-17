@@ -2,57 +2,83 @@
 <html lang="en">
 
 <head id="head-content">
-    <title>Infinite Proteins</title>
 </head>
+
 <body>
-    <!-- Header will be inserted here -->
-    <div id="header-container"></div>
+  <!-- Header (loaded via include.js) -->
+  <div id="header-container"></div>
+  <!-- SVG Divider -->
+  <div class="custom-shape-divider-top">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0 C400,100 800,0 1200,100 L1200,120 L0,120 Z" fill="#f8f9fa"></path>
+    </svg>
+  </div>
 
-    <!-- Page content starts here -->
-    <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container about px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <!-- Image Column -->
-                <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/about-protein.jpg" style="object-fit: cover;" alt="About Infinife Proteins">
-                    </div>
-                </div>
-
-                <!-- Text Column -->
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <div class="section-title text-start">
-                            <h1 class="display-4 mb-4 text-primary fw-bold" style="font-family: 'Poppins', sans-serif;">About Infinife Proteins</h1>
-                        </div>
-
-                        <p class="mb-4 pb-2 fs-5 text-dark" style="font-family: 'Open Sans', sans-serif;">
-                            With over <strong class="text-primary">20 years of expertise</strong>, Infinife Proteins is a trusted name in the animal protein industry. Based in <strong>Pernambut, Tamil Nadu</strong>, we specialize in supplying high-quality ingredients for <strong>pet food</strong>, <strong>aquaculture</strong>, and <strong>livestock nutrition</strong>.
-                        </p>
-
-                        <p class="mb-4 pb-2 fs-5 text-dark" style="font-family: 'Open Sans', sans-serif;">
-                            From <span class="text-success fw-semibold">custom product development</span> to rigorous <span class="text-success fw-semibold">quality control</span> and seamless <span class="text-success fw-semibold">global logistics</span>, our solutions are designed to meet the unique needs of each client. We are committed to consistency, safety, and sustainability in every batch we deliver.
-                        </p>
-
-                        <p class="mb-4 pb-2 fs-5 text-dark" style="font-family: 'Open Sans', sans-serif;">
-                            At Infinife, our clients come first. We pride ourselves on being <strong>responsive, reliable, and transparent</strong>—ensuring long-term partnerships with customers across <span class="text-primary fw-semibold">India and the world</span>.
-                        </p>
-
-                        <a href="#services" class="btn btn-primary py-3 px-5 fw-bold shadow-lg" style="font-family: 'Poppins', sans-serif;">Explore Our Services</a>
-                    </div>
-                </div>
-            </div>
+  <!-- About Section -->
+  <!-- <section id="about" class="container-fluid bg-light py-5" f8f9fa> -->
+  <section id="about" class="container-fluid" style="background-color: #f8f9fa; padding-top: 0; padding-bottom: 0;">
+    <div class="container">
+      <div class="row g-0 align-items-center">
+        <div class="col-lg-6" data-aos="fade-right">
+          <img src="img/about-protein.jpg" alt="About Infinite Proteins"
+            class="img-fluid rounded-start w-100 h-100" style="object-fit: cover; min-height: 300px;">
         </div>
+        <div class="col-lg-6 about-text py-5" data-aos="fade-left">
+          <div class="px-lg-5">
+            <h2 class="display-5 mb-4 text-primary fw-bold" style="font-family: 'Poppins', sans-serif;">
+              About Infinite Proteins
+            </h2>
+            <p class="mb-4 fs-5 text-dark" style="font-family: 'Open Sans', sans-serif;">
+              With over <strong class="text-primary">20 years of expertise</strong>, Infinite Proteins is a trusted name
+              in the animal protein industry. Based in <strong>Pernambut, Tamil Nadu</strong>, we specialize in supplying
+              high-quality ingredients for <strong>pet food</strong>, <strong>aquaculture</strong>, and
+              <strong>livestock nutrition</strong>.
+            </p>
+            <p class="mb-4 fs-5 text-dark" style="font-family: 'Open Sans', sans-serif;">
+              From <span class="text-success fw-semibold">custom product development</span> to rigorous
+              <span class="text-success fw-semibold">quality control</span> and seamless
+              <span class="text-success fw-semibold">global logistics</span>, our solutions are designed to meet the
+              unique needs of each client.
+            </p>
+            <p class="mb-4 fs-5 text-dark" style="font-family: 'Open Sans', sans-serif;">
+              At Infinite, our clients come first. We pride ourselves on being <strong>responsive, reliable, and
+                transparent</strong>—ensuring long-term partnerships with customers across <span
+                class="text-primary fw-semibold">India and the world</span>.
+            </p>
+            <a href="#services" class="btn btn-primary py-3 px-5 fw-bold shadow">Explore Our Services</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- About End -->
-   
-    <!-- Footer will be inserted here -->
-    <div id="footer-container"></div>
+  <!-- Features Section -->
+  <section id="features" class="container py-5">
+    <h3 class="text-center mb-5" data-aos="fade-up" style="font-family: 'Poppins', sans-serif;">
+      Our Core Capabilities
+    </h3>
+    <div class="row text-center g-4">
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+        <i class="fas fa-flask feature-icon mb-3"></i>
+        <h5>Custom R&D</h5>
+        <p>Innovative formula development to match any animal nutrition requirement.</p>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+        <i class="fas fa-clipboard-check feature-icon mb-3"></i>
+        <h5>Quality Control</h5>
+        <p>State-of-the-art lab testing and ISO-certified processes for every batch.</p>
+      </div>
+      <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+        <i class="fas fa-shipping-fast feature-icon mb-3"></i>
+        <h5>Global Logistics</h5>
+        <p>End-to-end freight solutions ensuring on-time delivery worldwide.</p>
+      </div>
+    </div>
+  </section>
 
-    <!-- Include Script -->
-    <script src="include.js"></script>
+  <!-- Footer (loaded via include.js) -->
+  <div id="footer-container"></div>
+  <script src="include.js"></script>
 </body>
 
 </html>
