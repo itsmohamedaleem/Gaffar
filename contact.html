@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head id="head-content">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
 </head>
 <body>
 
@@ -28,108 +33,110 @@
   </div>
   <!-- Page Header End -->
 
-    <section id="features" class="container py-1">
+  <section id="features" class="container py-1">
     <h1 class="text-center mb-5" data-aos="fade-up" style="font-family: 'Poppins', sans-serif;">
      Our Story
     </h1>
-   
   </section>
 
-
   <!-- Contact Section Start -->
-<section class="contact-section py-5">
-  <div class="container-fluid px-lg-0">
-    <div class="row g-0 g-lg-5 align-items-stretch">
-      
-      <!-- Map (Left) -->
-      <div class="col-lg-6" style="min-height: 400px;">
-        <iframe
-          class="w-100 h-100"
-          style="object-fit: cover; border: 0;"
-          src="https://shorturl.at/RheT8"
-          allowfullscreen
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
+  <section class="contact-section py-5">
+    <div class="container-fluid px-lg-0">
+      <div class="row g-0 g-lg-5 align-items-stretch">
 
-      <!-- Form (Right) -->
-      <div class="col-lg-6 bg-white">
-        <div class="h-100 d-flex align-items-center justify-content-center p-5">
-          <div class="w-100" style="max-width: 500px;">
+        <!-- Map (Left) -->
+        <div class="col-lg-6" style="min-height: 400px;">
+          <iframe
+            class="w-100 h-100"
+            style="object-fit: cover; border: 0;"
+            src="https://shorturl.at/RheT8"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
 
-            <h2 class="mb-4">Get in Touch</h2>
-            <p class="text-muted mb-4">
-              Have questions or need a custom quote? Fill out the form below and we’ll get back to you within 24 hours.
-            </p>
+        <!-- Form (Right) -->
+        <div class="col-lg-6 bg-white">
+          <div class="h-100 d-flex align-items-center justify-content-center p-5">
+            <div class="w-100" style="max-width: 500px;">
 
-            <form action="https://formsubmit.co/mdaleem2013@gmail.com" method="POST">
-              <input type="hidden" name="_next" value="thankyou.html">
+              <h2 class="mb-4">Get in Touch</h2>
+              <p class="text-muted mb-4">
+                Have questions or need a custom quote? Fill out the form below and we’ll get back to you within 24 hours.
+              </p>
 
-              <div class="form-floating mb-3">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="fullName"
-                  name="name"
-                  placeholder="Full Name"
-                  required
-                >
-                <label for="fullName">Full Name</label>
-              </div>
+              <form action="https://formsubmit.co/mdaleem2013@gmail.com" method="POST">
+                <!-- Redirect after submission -->
+                <input type="hidden" name="_next" value="https://infiniteproteinsandfoods.com/thankyou.html">
+                <!-- Optional: disable CAPTCHA -->
+                <input type="hidden" name="_captcha" value="false">
 
-              <div class="form-floating mb-3">
-                <input
-                  type="email"
-                  class="form-control"
-                  id="emailId"
-                  name="email"
-                  placeholder="Email ID"
-                  required
-                >
-                <label for="emailId">Email ID</label>
-              </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fullName"
+                    name="name"
+                    placeholder="Full Name"
+                    required
+                  >
+                  <label for="fullName">Full Name</label>
+                </div>
 
-              <div class="form-floating mb-3">
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="contactNumber"
-                  name="phone"
-                  placeholder="Contact Number"
-                  required
-                >
-                <label for="contactNumber">Contact Number</label>
-              </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="emailId"
+                    name="email"
+                    placeholder="Email ID"
+                    required
+                  >
+                  <label for="emailId">Email ID</label>
+                </div>
 
-              <div class="form-floating mb-4">
-                <input
-                  type="text"
-                  class="form-control"
-                  id="address"
-                  name="address"
-                  placeholder="Address (Optional)"
-                >
-                <label for="address">Address (Optional)</label>
-              </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="contactNumber"
+                    name="phone"
+                    placeholder="Contact Number"
+                    required
+                  >
+                  <label for="contactNumber">Contact Number</label>
+                </div>
 
-              <button type="submit" class="btn btn-primary w-100">
-                Submit
-              </button>
-            </form>
+                <div class="form-floating mb-4">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    name="address"
+                    placeholder="Address (Optional)"
+                  >
+                  <label for="address">Address (Optional)</label>
+                </div>
 
+                <button type="submit" class="btn btn-primary w-100">
+                  Submit
+                </button>
+              </form>
+
+            </div>
           </div>
         </div>
-      </div>
-      <!-- Form End -->
+        <!-- Form End -->
 
+      </div>
     </div>
-  </div>
-</section>
-<!-- Contact Section End -->
+  </section>
+  <!-- Contact Section End -->
 
   <!-- Footer (injected by include.js) -->
   <div id="footer-container"></div>
-    <script src="include.js"></script>
+
+  <script src="include.js"></script>
 </body>
 </html>
