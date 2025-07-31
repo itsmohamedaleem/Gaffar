@@ -17,7 +17,7 @@ async function includeHTML() {
       headElement.innerHTML = `
         <meta charset="utf-8">
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <title>Infinife Proteins</title>
+        <title>Infinite Proteins</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
@@ -60,7 +60,7 @@ async function includeHTML() {
       headerElement.innerHTML = `
         <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5 py-lg-0">
           <a href="index.html" class="navbar-brand d-flex align-items-center">
-            <h2 class="m-0 text-primary">Infinife Proteins</h2>
+            <h2 class="m-0 text-primary">Infinite Proteins</h2>
           </a>
           <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -89,7 +89,7 @@ async function includeHTML() {
             <div class="copyright">
               <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                  &copy; <a class="border-bottom" href="#">Infinife Proteins</a>, All Right Reserved.
+                  &copy; <a class="border-bottom" href="#">Infinite Proteins</a>, All Right Reserved.
                 </div>
               </div>
             </div>
